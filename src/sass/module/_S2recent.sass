@@ -1,0 +1,42 @@
+.section2
+    .galerie
+        .image
+            position: relative
+            margin: auto
+            overflow: hidden
+            width: 220px
+            height: 170px
+            transition: 5s
+
+        .lux, .glove, .cup, .bag, .shirt, .plate, .sofa, .bed, .shoes  
+            .addCart
+                position: absolute
+                bottom: -50%
+                z-index: 9
+                color: white
+                transition: 1s
+                opacity: 0.9    
+                span
+                    font-size: 8.5px
+                    padding: 30px
+            &:hover
+                .addCart
+                    transform: translateY(-100%)   
+
+        img 
+            transition: all 1s
+            &:hover
+                width: 200%
+                transform: scale(1.2)
+
+        .colonne
+            position: relative
+            .sale
+                padding-top: 15px
+                text-transform: uppercase
+                height: 50px
+                width: 50px
+                position: absolute
+                right: 70%
+                bottom: 1%
+

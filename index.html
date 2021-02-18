@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emporium</title>
+    <link rel="stylesheet" href="./public/css/app.css">
+</head>
+
+<body>
+    <!--NAVBAR -->
+    <div class="hide"></div>
+    <header>
+        <nav class="navbar d-flex flex-column bg-blanc navbar-expand-lg navbar-light">
+            <div class="img-nav">
+                <a class="navbar-brand logo font-weight-bold" href="#" >
+                    emporium.
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav  my-2">
+                    <li class="nav-item mx-md-2 active">
+                        <a class="nav-link text-uppercase" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link text-uppercase" href="#">Product</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link text-uppercase" href="#">blog</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link text-uppercase" href="#">elements</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link text-uppercase" href="#">about</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link text-uppercase" href="#">contact</a>
+                    </li>
+                        <span class="btn-blanc mx-md-1 align-self-center"></span>
+                        <span class="btn-noir mx-md-1 align-self-center"></span>
+                        <button class="btn btn-dark seConnecter">connexion</button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="bg-gris">
+        <div class="banner row ">
+            <div class="col-md-7 col-12  order-1 order-md-0 align-self-center">
+                <h1 class="text-red">Shop at </h1>
+                <img src="./public/img/logo.png" alt="logo">
+                <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore minima qui rerum ipsa reiciendis magnam.</p>
+                <button class="btn btn-red px-5 py-3 mb-2 mb-md-0  rounded-pill text-uppercase">Sale items</button>
+            </div>
+            <div class="col-md-5 col-12 order-0 order-md-1">
+                <img src="./public/img/slider-1.jpg" alt="" class="img-fluid align-self-center">
+            </div>
+        </div>
+        <!-- MODAL CONNEXION-->
+        <div id="connexion" class="co">
+            <button class="fermer bg-red text-white float-right " style="opacity:0.6;border:none">x</button>
+            <h1 class="font-weight-bold">emporium.</h1>
+            <div class=" d-flex justify-content-center align-items-center">
+                <button type="button" class="btn connexion btn-red mx-1 text-white">Connexion</button>
+                <button type="button" class="btn btn-red inscription text-white">Inscription</button>
+            </div>
+
+            <!-- carte 1 -->
+            <div class="modale1 p-2 " id="modale1">
+                <div class="champ my-2 d-flex flex-column">
+                    <div class="email col-10 offset-md-1">
+                        <h5>Email address</h5>
+                        <input type="text" placeholder="abcdef@gmail.com" class="col-10" >
+                        <p class="text-muted">We'll never share your email with anynone else.</p>
+                        <div class="mdp">
+                            <h5>Password</h5>
+                            <input type="password" placeholder="****" class="col-10">
+                        </div>
+                        <div class="submit my-2">
+                            <input type="checkbox" value="Check"> Check me out
+                        </div>
+                        <button type="button" class="btnshop btn-primary text-white mx-3">Submit</button>
+                    </div>
+                    <div class="reseaux my-3 mx-auto">
+                        <ul class=" list-inline"> 
+                            <li class="list-inline-item"><i class="fab fa-facebook-f fb"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-instagram insta"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-snapchat-ghost snap"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-laptop-code pc"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- carte 2 -->
+            <div class="modale1 p-2 d-none" id="modale2">
+                <div class="champ my-2 d-flex flex-column align-items-center">
+                    <div class="email col-10 offset-md-1">
+                        <h5>Email address</h5>
+                        <input type="text" placeholder="abcdef@gmail.com" class="col-10" >
+                        <p class="text-muted">We'll never share your email with anynone else.</p>
+                        <div class="mdp my-2">
+                            <h5>Password</h5>
+                            <input type="password" placeholder="****" class="col-10">
+                        </div>
+                        <div class="confirm my-2">
+                            <h5>Confirmer votre mot de passe</h5>
+                            <input type="password" placeholder="****" class="col-10">
+                        </div>
+                        <div class="form-check my-2 ">
+                            <input type="checkbox" value="femme">
+                            <label for="form-check-label">Femme</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="homme">
+                            <label for="form-check-label">Homme</label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary  text-white mx-3">Inscription</button>
+                    <div class="reseaux my-3 mx-auto">
+                        <ul class=" list-inline"> 
+                            <li class="list-inline-item"><i class="fab fa-facebook-f fb"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-instagram insta"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-snapchat-ghost snap"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-laptop-code pc"></i></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </section>
+    
+
+
+    <!-- SECTION 1 -->
+    <section class="home row my-3" id ="home">
+        <div class="col-md-4 col-12 my-2 my-md-0  column">
+            <img src="./public/img/services/service-1.jpg" class="img-fluid image" alt="service-1">
+            <span class="legend">living room </span>
+            <hr>
+        </div>
+        <div class="col-md-4 col-12 my-2 my-md-0 column">
+            <img src="./public/img/services/service-2.jpg" class="img-fluid image" alt="service-1">
+            <span class="legend">sale items </span>
+            <hr>
+        </div>
+        <div class="col-md-4 col-12 my-2 my-md-0 column">
+            <img src="./public/img/services/slider-3.jpg" class="img-fluid image" alt="service-1">
+            <span class="legend">clothes </span>
+            <hr>
+        </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="section2 mt-5"> 
+        <div class="container my-2">
+            <h3 class="text-center title ">Recents Products</h3>
+            <div class="row galerie">
+                <div class="carte col-md-4 col-12 mb-3 mx-1 mx-md-0">
+                    <div class="image lux ">
+                        <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="sofa" class=" img-fluid">
+                        <div class="addCart d-flex">
+                            <span class=" bg-dark view">View details</span>
+                            <span class="bg-red add">Add to cart</span>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column mt-3 align-items-center">
+                        <span class="text font-weight-bold">Luxury Sofa</span>
+                        <span class="prix text-red font-weigth-bold">$600.00</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12 mb-3 mx-1 mx-md-0 ">
+                    <div class="image glove">
+                        <img src="./public/img/products_mini/product-gloves.jpg" alt="glove" class="img-fluid">
+                        <div class="addCart d-flex">
+                            <span class=" bg-dark view">View details</span>
+                            <span class="bg-red add">Add to cart</span>
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-column mt-3 align-items-center colonne">
+                        <span class="text font-weight-bold ">Leather Gloves</span>
+                        <span class="prix text-red font-weigth-bold"> <s class="text-muted">$34.00</s>$27.00</span>
+                        <span class=" sale bg-red rounded-circle text-white text-center align-self-center">Sale!</span>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-12 mb-3 mx-1 mx-md-0">
+                    <div class="image cup">
+                        <img src="./public/img/products_mini/product-cups.jpg" alt="bowl" class="img-fluid">
+                        <div class="addCart d-flex">
+                            <span class=" bg-dark view">View details</span>
+                            <span class="bg-red add">Add to cart</span>
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-column mt-3 align-items-center">
+                        <span class="text font-weight-bold">Colorful Bowl</span>
+                        <span class="prix text-red font-weigth-bold">$18.00</span>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4 col-12 mb-3 mx-1 mx-md-0">
+                    <div class="image bag">
+                        <img src="./public/img/products_mini/product-bag.jpg" alt="bag" class="img-fluid">
+                        <div class="addCart d-flex">
+                            <span class=" bg-dark view">View details</span>
+                            <span class="bg-red add">Add to cart</span>
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-column mt-3 align-items-center colonne">
+                        <span class="text font-weight-bold">Women bag</span>
+                        <span class="prix text-red font-weigth-bold"><s class="text-muted">$420.00</s> $350.00</span>
+                        <span class=" sale bg-red rounded-circle text-white text-center align-self-center">Sale!</span>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4 col-12 mb-3 mx-1 mx-md-0">
+                    <div class="image shirt">
+                        <img src="./public/img/products_mini/product-tshitr.jpg" alt="tshirt" class=" img-fluid">
+                        <div class="addCart d-flex">
+                            <span class=" bg-dark view">View details</span>
+                            <span class="bg-red add">Add to cart</span>
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-column mt-3 align-items-center">
+                        <span class="text font-weight-bold">Minimal t-shirt</span>
+                        <span class="prix text-red font-weigth-bold">$15.00</span>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4 col-12 mb-3 mx-1 mx-md-0">
+                    <div class="image plate">
+                        <img src="./public/img/products_mini/product-plates.jpg" alt="plate" class=" img-fluid">
+                        <div class="addCart d-flex">
+                            <span class=" bg-dark view">View details</span>
+                            <span class="bg-red add">Add to cart</span>
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-column mt-3 align-items-center">
+                        <span class="text font-weight-bold">Plates set</span>
+                        <span class="prix text-red font-weigth-bold">$30.00</span>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-12 mb-3 mx-1 mx-md-0">
+                    <div class="image sofa">
+                        <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="modern sofa" class=" img-fluid">
+                        <div class="addCart d-flex">
+                            <span class=" bg-dark view">View details</span>
+                            <span class="bg-red add">Add to cart</span>
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-column mt-3 align-items-center">
+                        <span class="text font-weight-bold">Modern Sofa</span>
+                        <span class="prix text-red font-weigth-bold">$900.00</span>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4 col-12 mb-3 mx-1 mx-md-0">
+                    <div class="image bed">
+                        <img src="./public/img/products_mini/product-bed.jpg" alt="bed " class=" img-fluid">
+                        <div class="addCart d-flex">
+                            <span class=" bg-dark view">View details</span>
+                            <span class="bg-red add">Add to cart</span>
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-column mt-3 align-items-center">
+                        <span class="text font-weight-bold">Bed Linen</span>
+                        <span class="prix text-red font-weigth-bold">$79.00</span>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4 col-12 mb-3 mx-1 mx-md-0">
+                    <div class="image shoes">
+                        <img src="./public/img/products_mini/product-shoes.jpg" alt="shoes" class=" img-fluid">
+                        <div class="addCart d-flex">
+                            <span class=" bg-dark add">View details</span>
+                            <span class="bg-red add">Add to cart</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column mt-3 align-items-center">
+                        <span class="text font-weight-bold">Minimal shoes</span>
+                        <span class="prix text-red font-weigth-bold">$27.00</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- SECTION 3 -->
+
+    <section class="section3 my-3">
+        <div class="contenu text-white text-center">
+            <h1 class="titre">Discover thousands of great products</h1>
+            <button class="btn btn-red px-5 py-3 mb-2 mb-md-0  rounded-pill text-uppercase">learn more</button>
+        </div>
+    </section>
+
+    <!-- SECTION 4  -->
+    <section class="section4 my-2">
+        <div class="container">
+            <h3 class="text-center title text-capitalize font-weight-bold mb-4">hot fashion product</h3>
+            <div class="carrousel ">
+                <div class="test row d-flex flex-nowrap">
+                    <div class="col-md-3 col-12">
+                        <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="luxury-sofa" class="img-fluid">
+                        <div class="d-flex flex-column mt-3 align-items-center">
+                            <span class="text font-weight-bold">Luxury Sofa</span>
+                            <span class="prix text-red font-weigth-bold">$600.00</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <img src="./public/img/products_mini/product-gloves.jpg" alt="glove" class="img-fluid">
+                        <div class="d-flex flex-column mt-3 align-items-center">
+                            <span class="text font-weight-bold">Leather Gloves</span>
+                            <span class="prix text-red font-weigth-bold"><s class="text-muted">$34.00</s>$27.00</span>
+                        </div>
+    
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <img src="./public/img/products_mini/product-cups.jpg" alt="cups" class="img-fluid">
+                        <div class="d-flex flex-column mt-3 align-items-center">
+                            <span class="text font-weight-bold">Colorful Bowl</span>
+                            <span class="prix text-red font-weigth-bold">$18.00</span>
+                        </div>
+    
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <img src="./public/img/products_mini/product-bag.jpg" alt="womeBag" class="img-fluid">
+                        <div class="d-flex flex-column mt-3 align-items-center">
+                            <span class="text font-weight-bold">Women Bag</span>
+                            <span class="prix text-red font-weigth-bold"><s class="text-muted">$420.00</s>$350.00</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <img src="./public/img/products_mini/product-tshitr.jpg" alt="tshirt" class="img-fluid">
+                        <div class="d-flex flex-column mt-3 align-items-center">
+                            <span class="text font-weight-bold">Minimal t-shirt</span>
+                            <span class="prix text-red font-weigth-bold">$15.00</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <img src="./public/img/products_mini/product-plates.jpg" alt="plate" class="img-fluid">
+                        <div class="d-flex flex-column mt-3 align-items-center">
+                            <span class="text font-weight-bold">Plates set</span>
+                            <span class="prix text-red font-weigth-bold">$30.00</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="modern" class="img-fluid">
+                        <div class="d-flex flex-column mt-3 align-items-center">
+                            <span class="text font-weight-bold">Moderne Sofa</span>
+                            <span class="prix text-red font-weigth-bold">$300.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex my-5 justify-content-center align-items-center">
+                <div class="btn-group" role="group" aria-label="First group">
+                    <button type="button" class="btn un boutonCarou bout rounded-circle mx-1 btn-outline-dark p-1 mx-2"> </button>
+                    <button type="button" class="btn deux boutonCarou bout rounded-circle mx-1 btn-outline-dark p-1 mx-2"> </button>
+                    <button type="button" class="btn trois boutonCarou bout rounded-circle mx-1 btn-outline-dark p-1 mx-2"> </button>
+                    <button type="button" class="btn quatre boutonCarou bout rounded-circle mx-1 btn-outline-dark p-1 mx-2"> </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECTION 5 -->
+    <section class="section5 my-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-12 text-center card d-flex flex-column align-items-center justify-content-center">
+                    <i class="far fa-check-circle mb-4 icone"></i>
+                    <h6 class="mb-4 text-uppercase">trusted by 10 000 customer</h6>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, porro.</p>
+                    <button class="btn btn-bleu">Learn More</button>
+                </div>
+                <div class="col-md-4 col-12 bg-red text-white text-center card d-flex flex-column align-items-center justify-content-center">
+                    <i class="fas fa-paper-plane mb-4 icone" ></i>
+                    <h6 class="mb-4 text-uppercase">very fast shipping</h6>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, porro.</p>
+                    <button class="btn btn-light">Learn More</button>
+                </div>
+                <div class="col-md-4 col-12 text-center card d-flex flex-column align-items-center justify-content-center">
+                    <i class="far fa-check-circle mb-4 icone"></i>
+                    <h6 class="mb-4 text-uppercase">trusted by 10 000 customer</h6>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, porro.</p>
+                    <button class="btn btn-bleu">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-bleu">
+        <div class="container-fluid  text-white py-4">
+            <div class="row">
+                <div class="col-md-3 offset-md-2">
+                    <h6 class="mb-4 text-uppercase">about us</h6>
+                    <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga itaque dignissimos enim hic, repellat eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel maxime est harum! Fuga, porro facere?</p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="mb-4 text-uppercase">recent post</h6>
+                    <ul class="list-unstyled">
+                        <li>> recent post</li>
+                        <li>> recent post</li>
+                        <li>> recent post</li>
+                        <li>> recent post</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="mb-4 text-uppercase">tag cloud</h6>
+                    <div class="d-flex flex-wrap text-muted ">
+                        <div>
+                            <span
+                                class="badge  border border-white rounded px-md-3 py-md-2 mr-1 mb-1">business</span>
+                        </div>
+    
+                        <div>
+                            <span
+                                class="badge  border border-white rounded px-md-2 py-md-2 mr-1 mb-1">Confidence</span>
+                        </div>
+    
+                        <div>
+                            <span
+                                class="badge  border border-white rounded px-md-3 py-md-2 mr-1 mb-1">gadget</span>
+                        </div>
+    
+                        <div>
+                            <span
+                                class="badge  border border-white rounded px-md-2 py-md-2 mr-1 mb-1">identity</span>
+                        </div>
+    
+    
+                        <div>
+                            <span
+                                class="badge  border border-white rounded px-md-3 py-md-2 mr-1 mb-1">logo</span>
+                        </div>
+    
+                        <div>
+                            <span
+                                class="badge  border border-white rounded px-md-3 py-md-2 mr-1 mb-1">photography</span>
+                        </div>
+    
+                        <div>
+                            <span
+                                class="badge  border border-white rounded px-md-3 py-md-2 mr-1 mb-1">time</span>
+                        </div>
+    
+                        <div>
+                            <span
+                                class="badge  border border-white rounded px-md-3 py-md-2 mr-1 mb-1">trips</span>
+                        </div>
+                        <div>
+                            <span
+                                class="badge  border border-white rounded px-md-3 py-md-2 mr-1 mb-1">works</span>
+                        </div>
+                        <div>
+                            <span
+                                class="badge  border border-white rounded px-md-3 py-md-2 mr-1 mb-1">workspace</span>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <span class="text-muted text-center">COPYRIGHT 2021 TOUS DROITS RESERVÉS @SALIOUVJ</span>
+        </div>
+    </footer>
+
+    <script src="./public/js/main.js"></script>
+    <!-- JQUERY -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <!-- BOOTSTRAP-->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

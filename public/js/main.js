@@ -11,7 +11,6 @@ let header = document.querySelector('header')
 
 let allBtn = document.querySelectorAll(".boutonCarou");
 
-
 // DARK
 let sombre = () => {
     document.body.style = "background-color:black"
@@ -134,7 +133,6 @@ let btnDeux = document.querySelector('.deux')
 let btnTrois = document.querySelector('.trois')
 let btnQuatre = document.querySelector('.quatre')
 let test = document.querySelector('.test')
-
 
 btnDeux.addEventListener('click', ()=> {
     test.style = "transform:translateX(-200px); transition:1s"    
